@@ -1,0 +1,320 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav {
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #999;
+}
+
+.hero {
+    background-image: url('path/to/your/hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 200px 0;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.about {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.portfolio {
+    padding: 100px 0;
+    text-align: center;
+    border-image-width: 20px;
+}
+
+.portfolio .portfolio-item img {
+    width: 100%; 
+    height: 200px; 
+    object-fit: cover; 
+    border-radius: 8px; 
+}
+
+
+.portfolio h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.portfolio .portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.portfolio .portfolio-item {
+    max-width: 300px;
+    text-align: left;
+}
+
+.portfolio .portfolio-item h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.portfolio .portfolio-item p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.blog {
+    background-color: #f0f0f0;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.blog h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.blog .blog-posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.blog .blog-post {
+    max-width: 400px;
+    text-align: left;
+}
+
+.blog .blog-post h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.blog .blog-post p {
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.contact {
+    background-color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.contact button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+@media screen and (max-width: 768px) {
+    header .logo {
+        font-size: 1.2em;
+    }
+    header nav ul li {
+        margin-right: 10px;
+    }
+    .hero {
+        padding: 150px 0;
+    }
+    .hero h1 {
+        font-size: 2.5em;
+    }
+    .hero p {
+        font-size: 1em;
+    }
+    .about {
+        padding: 80px 0;
+    }
+    .about h2 {
+        font-size: 2em;
+    }
+    .about p {
+        font-size: 1em;
+    }
+    .portfolio {
+        padding: 80px 0;
+    }
+    .portfolio h2 {
+        font-size: 2em;
+    }
+    .portfolio .portfolio-items {
+        gap: 20px;
+    }
+    .portfolio .portfolio-item h3 {
+        font-size: 1.3em;
+    }
+    .portfolio .portfolio-item p {
+        font-size: 0.9em;
+    }
+    .blog {
+        padding: 80px 0;
+    }
+    .blog h2 {
+        font-size: 2em;
+    }
+    .blog .blog-posts {
+        gap: 20px;
+    }
+    .blog .blog-post h3 {
+        font-size: 1.3em;
+    }
+    .blog .blog-post p {
+        font-size: 0.9em;
+    }
+    .contact {
+        padding: 80px 0;
+    }
+    .contact h2 {
+        font-size: 2em;
+    }
+    .contact .form-group {
+        margin-bottom: 15px;
+    }
+    .contact label {
+        font-size: 1em;
+    }
+    .contact input,
+    .contact textarea {
+        font-size: 0.9em;
+        padding: 8px;
+    }
+    .contact button {
+        font-size: 0.9em;
+        padding: 10px 25px;
+    }
+    footer {
+        padding: 15px 0;
+    }
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
